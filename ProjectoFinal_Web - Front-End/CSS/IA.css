@@ -1,0 +1,495 @@
+main {
+    animation-name: main_initialPos;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    & button {
+        animation-name: main-button_initialPos;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+
+        &:hover {
+            font-weight: bold;
+
+            animation-name: main-button_hover;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    & img {
+        opacity: 0.1;
+
+        &:hover {
+            opacity: 1;
+
+            &+div {
+                opacity: 0.1;
+            }
+        }
+    }
+
+    & a {
+        text-decoration: none;
+
+        &:hover {
+            color: sienna;
+        }
+    }
+
+    & div[id="flush-collapseOne"] {
+        & img {
+            height: 25vh;
+        }
+
+        & div[class="accordion-body"] {
+            & div {
+                position: absolute;
+                top: 36%;
+            }
+
+            & a {
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+
+            & p {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & li {
+                &:hover {
+                    color: sienna;
+                }
+            }
+        }
+    }
+
+    & div[id="flush-collapseTwo"] {
+        & img {
+            height: 30vh;
+        }
+
+        & div[class="accordion-body"] {
+            & div {
+                position: absolute;
+                top: 42%;
+            }
+
+            & dt {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & dd {
+                &:hover {
+                    color: sienna;
+                }
+            }
+        }
+    }
+
+    & div[id="flush-collapseThree"] {
+        & img {
+            height: 38vh;
+        }
+
+        & div[class="accordion-body"] {
+            & div {
+                position: absolute;
+                top: 48%;
+            }
+
+            & dt {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & dd {
+                &:hover {
+                    color: sienna;
+                }
+            }
+        }
+    }
+
+    & div[id="flush-collapseFour"] {
+        & img {
+            height: 15vh;
+        }
+
+        & div[class="accordion-body"] {
+            & div {
+                position: absolute;
+                top: 54%;
+            }
+
+            & dt {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & span {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & li {
+                &:hover {
+                    color: sienna;
+                }
+            }
+        }
+    }
+
+    & div[id="flush-collapseFive"] {
+        & img {
+            height: 13vh;
+        }
+
+        & div[class="accordion-body"] {
+            & div {
+                position: absolute;
+                top: 61%;
+            }
+
+            & a {
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+
+            & p {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & li {
+                &:hover {
+                    color: sienna;
+                }
+            }
+        }
+    }
+
+    & div[id="flush-collapseSix"] {
+        & img {
+            height: 40vh;
+        }
+
+        & div[class="accordion-body"] {
+            & div {
+                position: absolute;
+                top: 67%;
+            }
+
+            & dt {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & dd {
+                &:hover {
+                    color: sienna;
+                }
+            }
+        }
+    }
+
+    & div[id="flush-collapseSeven"] {
+        & img {
+            height: 23vh;
+        }
+
+        & div[class="accordion-body"] {
+            & div {
+                position: absolute;
+                top: 73%;
+            }
+
+            & a {
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+
+            & p {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & li {
+                &:hover {
+                    color: sienna;
+                }
+            }
+        }
+    }
+
+    & div[id="flush-collapseEight"] {
+        & img {
+            height: 35vh;
+        }
+
+        & div[class="accordion-body"] {
+            & div {
+                position: absolute;
+                top: 79%;
+            }
+
+            & a {
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+
+            & p {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & dt {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & span {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & li {
+                &:hover {
+                    color: sienna;
+                }
+            }
+        }
+    }
+
+    & div[id="flush-collapseNine"] {
+        & img {
+            height: 60vh;
+        }
+
+        & div[class="accordion-body"] {
+            &>div {
+                position: absolute;
+                top: 85%;
+
+                &+div {
+                    position: absolute;
+                    Top: 112%;
+                }
+            }
+
+            & a {
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+
+            & p {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & li {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & div[class="col-2"] {
+                margin-left: auto;
+                margin-right: auto;
+
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & div[class="col-3"] {
+                margin-left: auto;
+                margin-right: auto;
+
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & dt {
+                &:hover {
+                    color: sienna;
+                }
+            }
+
+            & dd {
+                &:hover {
+                    color: sienna;
+                }
+            }
+        }
+    }
+}
+
+@keyframes main_initialPos {
+    0% {
+        visibility: hidden;
+        box-shadow: 0px 0px 0px 0px white;
+    }
+
+    25% {
+        visibility: hidden;
+        box-shadow: 0px 0px 0px 0px white;
+    }
+
+    50% {
+        visibility: visible;
+        box-shadow: -1px 1px 1px 1px lightgray;
+    }
+
+    75% {
+        visibility: visible;
+        box-shadow: -2px 2px 2px 2px gray;
+    }
+
+    100% {
+        visibility: visible;
+        box-shadow: -2px 2px 2px 2px black;
+    }
+}
+
+@keyframes main-button_initialPos {
+    0% {
+        background-image: linear-gradient(to right, white, lightgray, white);
+    }
+
+    100% {
+        background-image: linear-gradient(to right, lightgray, white, lightgray);
+    }
+}
+
+@keyframes main-button_hover {
+    0% {
+        background-image: linear-gradient(to right, lightgray, white, lightgray);
+
+    }
+
+    100% {
+        background-image: linear-gradient(to right, white, lightgray, white);
+    }
+}
+
+section {
+    & h4 {
+        text-align: center;
+        color: darkgray;
+        text-shadow: 8px 8px 4px lightgray;
+
+        &:hover {
+            color: saddlebrown;
+            text-shadow: 10px 10px 4px darkgray;
+        }
+    }
+
+    & div[class="card col"] {
+        margin-left: auto;
+        margin-right: auto;
+
+        animation-name: cards_initialPos;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+
+        &:hover {
+            z-index: 1;
+
+            animation-name: cards_hover;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    & p[class="card-text"] {
+        color: white;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+@keyframes cards_initialPos {
+    0% {
+        box-shadow: 0px 0px 0px 0px black;
+        background-color: white;
+        border-color: black;
+    }
+
+    50% {
+        box-shadow: 1px 1px 1px 1px gray;
+        background-color: gray;
+        border-color: gray;
+    }
+
+    100% {
+        box-shadow: 2px 2px 2px 2px lightgray;
+        background-color: black;
+        border-color: lightgray;
+    }
+}
+
+@keyframes cards_hover {
+    0% {
+        rotate: 0deg;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        background-color: black;
+        border-color: lightgray;
+    }
+
+    25% {
+        rotate: 2deg;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        background-color: black;
+        border-color: lightgray;
+    }
+
+    50% {
+        rotate: 0deg;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        background-color: black;
+        border-color: lightgray;
+    }
+
+    75% {
+        rotate: -2deg;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        background-color: black;
+        border-color: lightgray;
+    }
+
+    100% {
+        rotate: 0deg;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        background-color: black;
+        border-color: lightgray;
+    }
+}

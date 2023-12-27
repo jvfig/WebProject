@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- Importar CSS locais -->
+    <link rel="stylesheet" href="../CSS/form.css" />
+    <!-- Împortar CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Importar JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer> </script>
+</head>
+
+<body>
+    <!-- Quebra de linha : br -->
+    <br>
+    <!-- Quebra de tema : hr -->
+    <hr>
+    <!-- Elemento semântico : form -->
+    <form>
+        <!-- Bootstrap : Forms - Layout - Horizontal form
+                
+        -->
+        <div class="container text-center">
+            <h5>ID</h5>
+            <fieldset class="row mb-5">
+                <legend class="col-form-label col-sm-1 pt-0"></legend>
+                <div class="col-sm-10">
+                    <label for="inputFirstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="inputFirstName" name="firstName">
+                    <!-- Quebra de linha : br -->
+                    <br>
+                    <label for="inputMiddleNames" class="form-label">Middle Names</label>
+                    <input type="text" class="form-control" id="inputMiddleNames" name="middleNames">
+                    <!-- Quebra de linha : br -->
+                    <br>
+                    <label for="inputSurname" class="form-label">Surname</label>
+                    <input type="text" class="form-control" id="inputSurname" name="surname">
+                    <!-- Quebra de linha : br -->
+                    <br>
+                    <label for="inputBirthday" class="form-label">Birthday</label>
+                    <input type="date" class="form-control" id="inputBirthday" name="birthday">
+                </div>
+            </fieldset>
+            <h5>Gender</h5>
+            <fieldset class="row mb-4">
+                <div class="col-form-label col-sm-2 pt-0">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="inputMale" name="gender" value="Male">
+                        <label for="inputMale" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="inputFemale" name="gender" value="Female">
+                        <label for="inputFemale" class="form-check-label">Female</label>
+                    </div>
+                </div>
+            </fieldset>
+            <h5>Contact Information</h5>
+            <fieldset class="row mb-5">
+                <legend class="col-form-label col-sm-1 pt-0"></legend>
+                <div class="col-sm-10">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" name="email"
+                        placeholder="userName@domainName">
+                    <!-- Quebra de linha : br -->
+                    <br>
+                    <label for="inputMobile" class="form-label">Mobile Number</label>
+                    <input type="tel" class="form-control" id="inputMobile" name="mobile" placeholder="+xxx xxxxxxxxx">
+                    <!-- Quebra de linha : br -->
+                    <br>
+                    <label for="inputNationality" class="form-label">Nationality</label>
+                    <select class="form-select" id="inputNationality" name="nationality">
+                        <option selected>Choose your country...</option>
+                        <optgroup label="European Countries">
+                            <option value="Portugal">Portugal</option>
+                            <option value="Spain">Spain</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                        </optgroup>
+                        <optgroup label="Asian Countries">
+                            <option value="China">China</option>
+                            <option value="Japan">Japan</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+            <h5>Contact me by</h5>
+            <fieldset class="row mb-5">
+                <div class="col-form-label col-sm-2 pt-0">
+                    <div class="form-check">
+                        <div class="form-check">
+                            <label for="inputContactMobile" class="form-check-label">Mobile</label>
+                            <input type="checkbox" class="form-check-input" id="inputContactMobile" name="contactMobile"
+                                value="Mobile">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <div class="form-check">
+                            <label for="inputContactEmail" class="form-check-label">Email</label>
+                            <input type="checkbox" class="form-check-input" id="inputContactEmail" name="contactEmail"
+                                value="Email">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="row mb-auto">
+                <div class="col-form-label col-sm-12 pt-0">
+                    <label for="inputComments" class="form-label">Comments</label>
+                    <!-- Quebra de linha : br -->
+                    <br>
+                    <textarea class="form-control" id="inputComments" name="comments" rows="20"
+                        placeholder="Enter your text here..." required></textarea>
+                    <!-- Quebra de linha : br -->
+                    <br>
+                    <label for="inputFile" class="form-label">Select a file</label>
+                    <input type="file" class="form-control" id="inputFile" name="file" multiple>
+                    <!-- Quebra de linha : br -->
+                    <br>
+                    <input type="reset" class="btn btn-primary" value="Clear">
+                    <input type="submit" class="btn btn-primary" value="Submit"
+                        onclick="alert('Your form was submitted')">
+                </div>
+            </fieldset>
+        </div>
+    </form>
+    <!-- Quebra de linha : br -->
+    <br>
+    <!-- Quebra de tema : hr -->
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+h5 {
+    text-shadow: 2px 2px 2px lightgray;
+
+    &:hover {
+        color: saddlebrown;
+        text-shadow: 4px 4px 4px gray;
+    }
+}
+
+label {
+    &:hover {
+        color: saddlebrown;
+        font-weight: bold;
+        text-shadow: 4px 4px 4px gray;
+    }
+}
+
+fieldset {
+    background-image: linear-gradient(to right, lightgray, white, lightgray);
+    box-shadow: 2px 2px 2px 2px black;
+
+    &:hover {
+        background-image: linear-gradient(to right, white, lightgray, white);
+        box-shadow: -2px 2px 2px 2px black;
+    }
+}

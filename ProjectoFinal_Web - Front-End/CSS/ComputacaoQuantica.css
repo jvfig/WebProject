@@ -1,0 +1,66 @@
+main {
+    height: 50vh;
+
+    & iframe {
+        aspect-ratio: 16/9;
+        height: 45vh;
+        box-shadow: -2px 2px 4px 4px darkgray;
+
+        &:hover {
+            box-shadow: 4px 4px 4px 4px darkgray;
+        }
+    }
+
+    & div[class="col"] {
+        & span {
+            text-shadow: 5px 5px 2px lightgray;
+        }
+
+        &+div[class="col"] {
+            &:hover {
+                color: saddlebrown;
+            }
+        }
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 23%;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.overlay a {
+    padding: 2px;
+    text-decoration: none;
+    font-size: 3vh;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 16vh;
+    right: 3vw;
+    font-size: 8vh;
+}

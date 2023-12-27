@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligência Artificial</title>
+    <!-- Importar Icons do site https://fonts.google.com/ -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Importar CSS locais -->
+    <link rel="stylesheet" href="../CSS/default.css" />
+    <link rel="stylesheet" href="../CSS/IA.css" />
+    <!-- Importar JS locais -->
+    <script src="../JS/default.js" defer></script>
+    <!-- Împortar CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Importar JS do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer> </script>
+</head>
+
+<body>
+    <!-- Elemento semântico : header -->
+    <header>
+        <!-- Bootstrap : Carousel - Caption -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="../Imagens/Galaxies.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Our world</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="../Imagens/IACarrossel.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>The present.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagens/ComputacaoQuantica.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>The future !</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Imagens/TheTruthIsOutThere.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>The unknow...</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <!-- Elemento semântico : nav
+            Bootstrap : Navbar - Nav
+                are responsive by default
+    -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- https://fonts.google.com/ : Icons -->
+            <span class="material-symbols-outlined">smart_toy</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="../index.html"><span>Home</span></a>
+                    <a class="nav-link" aria-current="page" href="./IA.html"><span>Inteligência Artificial</span></a>
+                    <a class="nav-link" href="./ComputacaoQuantica.html"><span>Computação Quântica</span></a>
+                    <a class="nav-link" href="./UFO-UAP.html"><span>UFO / UAP</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Quebra de linha : br -->
+    <br>
+    <!-- Elemento semântico : main -->
+    <main>
+        <!-- Bootstrap : Accordion - Flush -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <span>1. O que é a Inteligência Artificial (IA) ?</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <img src="../Imagens/IA//IAOQueE.jpg" class="d-block w-100" alt="...">
+                    <div class="accordion-body">
+                        <!-- Criou-se o elemento "div" para colocar todos os elementos "inline" dentro de um elemento "block"
+                                o objectivo é posicionar todos os elementos "inline" sobre uma imagem como pano de fundo...
+                        -->
+                        <div>
+                            <p>Segundo a <a href="https://cloud.google.com/learn/what-is-artificial-intelligence"
+                                    title="https://cloud.google.com/learn/what-is-artificial-intelligence"
+                                    target="_blank"><span>Google</span></a> é um conjunto de tecnologias que permite que
+                                os
+                                computadores desempenhem uma variedade de funções avançadas, tais como a capacidade de
+                                ver,
+                                perceber e traduzir :</p>
+                            <ul>
+                                <li>linguagens escritas e faladas</li>
+                                <li>analizar dados</li>
+                                <li>fazer recomendações</li>
+                                <li>e muitas outras.</li>
+                            </ul>
+                            <p>Tal como existe uma inteligência humana de origem biológica, a inteligência artificial
+                                seria
+                                em tudo semelhante à primeira, excepto na sua origem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <span>1.1</span>
+                        <a href="https://www.ibm.com/blog/understanding-the-different-types-of-artificial-intelligence/"
+                            title="https://www.ibm.com/blog/understanding-the-different-types-of-artificial-intelligence/"
+                            target="_blank"><span>&nbsp;Tipos de IA&nbsp;</span></a>
+                        <span>: classificação baseada nas suas capacidades</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <img src="../Imagens/IA/IATipos1.jpg" class="d-block w-100" alt="...">
+                    <div class="accordion-body">
+                        <!-- Criou-se o elemento "div" para colocar todos os elementos "inline" dentro de um elemento "block"
+                                o objectivo é posicionar todos os elementos "inline" sobre uma imagem como pano de fundo...
+                        -->
+                        <div>
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>IA Limitada ou Fraca</dt>
+                                        <dd>Corresponde ao único tipo de IA que existe actualmente. Só executa tarefas
+                                            para
+                                            as quais foi treinada, de forma muito mais célere e eficaz que qualquer
+                                            humano.
+                                            No entanto, não executa tarefas para além daquelas que recebeu treino.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>IA Geral ou Forte</dt>
+                                        <dd>Consegue executar tarefas para além daquelas que recebeu treino. A partir
+                                            das
+                                            suas aprendizagens e capacidades passadas consegue realizar novas tarefas
+                                            num
+                                            novo contexto sem a necessidade de ser treinada para o efeito.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>Super IA</dt>
+                                        <dd>Corresponderia literalmente a uma inteligência humana : seria capaz de
+                                            pensar,
+                                            raciocinar, aprender, de fazer julgamentos, de perceber as emoções humanas e
+                                            de
+                                            ter ela própria sentimentos, crenças e desejos.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <span>1.2</span>
+                        <a href="https://www.ibm.com/blog/understanding-the-different-types-of-artificial-intelligence/"
+                            title="https://www.ibm.com/blog/understanding-the-different-types-of-artificial-intelligence/"
+                            target="_blank"><span>&nbsp;Tipos de IA&nbsp;</span></a>
+                        <span>: classificação baseada nas suas funcionalidades</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <img src="../Imagens/IA/IATipos2.jpg" class="d-block w-100" alt="...">
+                    <div class="accordion-body">
+                        <!-- Criou-se o elemento "div" para colocar todos os elementos "inline" dentro de um elemento "block"
+                                o objectivo é posicionar todos os elementos "inline" sobre uma imagem como pano de fundo...
+                        -->
+                        <div>
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>Máquinas Reactivas</dt>
+                                        <dd>Sâo sistemas de IA sem memória que foram projectadas para desempenhar uma
+                                            tarefa
+                                            específica. Como não conseguem memorizar dados ou decisões passadas, elas
+                                            trabalham apenas com os dados disponíveis no momento. Elas reagem aos dados
+                                            que
+                                            recebem sem haver uma aprendizagem. Exemplo : IBM Deep Blue.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>Memória Limitada</dt>
+                                        <dd>Sâo sistemas de IA com memória em que podem utilizar dados e/ou previsões
+                                            passados ou presentes para tomarem decisões. Exemplos : Generative AI,
+                                            Virtual
+                                            Assistants and Chatbots, Self-driving Cars.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>Teoria da Mente</dt>
+                                        <dd>Sâo sistemas de IA que conseguiriam perceber os pensamentos e emoções de
+                                            outras
+                                            entidades. Isto permitiria simular o comportamento humano. Também
+                                            conseguiriam
+                                            perceber e contextualizar a arte humana e os artigos de opinião, que a
+                                            "Generative AI" é actualmente incapaz de o fazer.</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>Auto-consciência</dt>
+                                        <dd>Sâo sistemas de IA que seriam capazes de fazer introspeções e teriam as suas
+                                            próprias emoções, necessidades e crenças.</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <span>1.3</span>
+                        <a href="https://app.twelvelabs.io/blog/what-is-multimodal-ai"
+                            title="https://app.twelvelabs.io/blog/what-is-multimodal-ai"
+                            target="_blank"><span>&nbsp;Tipos de IA&nbsp;</span></a>
+                        <span>: classificação baseada nas suas modalidades</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <img src="../Imagens/IA/IATipos3.jpg" class="d-block w-100" alt="...">
+                    <div class="accordion-body">
+                        <!-- Criou-se o elemento "div" para colocar todos os elementos "inline" dentro de um elemento "block"
+                                o objectivo é posicionar todos os elementos "inline" sobre uma imagem como pano de fundo...
+                        -->
+                        <div>
+                            <dl>
+                                <dt>IA Multimodal</dt>
+                                <dd>
+                                    <span>Tipo de IA que consegue perceber e gerar múltiplas formas de dados
+                                        simultaneamente, tais como :</span>
+                                    <ul>
+                                        <li>texto</li>
+                                        <li>imagens</li>
+                                        <li>sons</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        <span>2. O que é "</span>
+                        <a href="https://ai.engineering.columbia.edu/ai-vs-machine-learning/"
+                            title="https://ai.engineering.columbia.edu/ai-vs-machine-learning/"
+                            target="_blank"><span>Machine Learning</span></a>
+                        <span>" ?</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <img src="../Imagens/IA/MachineLearning.jpg" class="d-block w-100" alt="...">
+                    <div class="accordion-body">
+                        <!-- Criou-se o elemento "div" para colocar todos os elementos "inline" dentro de um elemento "block"
+                                o objectivo é posicionar todos os elementos "inline" sobre uma imagem como pano de fundo...
+                        -->
+                        <div>
+                            <!-- Não está a funcionar a hiperligação pretendida : #flush-collapseOne
+                                    utilizou-se o "id" do "div" pai : #accordionFlushExample
+                            -->
+                            <p>É o caminho para chegar à
+                                <a href="#accordionFlushExample"
+                                    title="1. O que é a Inteligência Artificial (IA) ?"><span>IA</span></a>. Corresponde
+                                a uma subcategoria de <a href="#accordionFlushExample"
+                                    title="1. O que é a Inteligência Artificial (IA) ?"><span>IA</span></a> que utiliza
+                                algoritmos de aprendizagem automática para :
+                            </p>
+                            <ul>
+                                <li>reconhecer padrões a partir de dados</li>
+                                <li>aplicar o conhecimento obtido dos padrões para tomar cada vez mais melhores
+                                    decisões.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        <span>2.1 Tipos de "</span>
+                        <a href="https://www.simplilearn.com/10-algorithms-machine-learning-engineers-need-to-know-article"
+                            title="https://www.simplilearn.com/10-algorithms-machine-learning-engineers-need-to-know-article"
+                            target="_blank"><span>Machine Learning</span></a>
+                        <span>"</span>
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <img src="../Imagens/IA/TypesMachineLearning.jpg" class="d-block w-100" alt="...">
+                    <div class="accordion-body">
+                        <!-- Criou-se o elemento "div" para colocar todos os elementos "inline" dentro de um elemento "block"
+                                o objectivo é posicionar todos os elementos "inline" sobre uma imagem como pano de fundo...
+                        -->
+                        <div>
+                            <dl>
+                                <dt>Aprendizagem Supervisionada</dt>
+                                <dd>Tipo de aprendizagem na qual os algoritmos aprendem a partir de dados catalogados. O
+                                    algoritmo recebe os dados e as correspondentes etiquetas. O objectivo deste tipo de
+                                    aprendizagem é prever eficazmente as etiquetas para novos dados, os quais são
+                                    desconhecidos para o algoritmo.</dd>
+                                <dt>Aprendizagem Não Supervisionada</dt>
+                                <dd>Tipo de aprendizagem na qual os algoritmos aprendem a partir de dados não
+                                    catalogados. O objectivo deste tipo de aprendizagem é descobrir padrões, relações ou
+                                    estruturas.
+                                </dd>
+                                <dt>Aprendizagem Semi-supervisionada</dt>
+                                <dd>Tipo de aprendizagem híbrida que combina a aprendizagem "Supervisionada" e "Não
+                                    Supervisionada". O objectivo deste tipo de aprendizagem é superar a limitação
+                                    associada aos dados catalogados utilizando os dados não catalogados para obter
+                                    informação adicional e um contexto. Esta abordagem é utilizada para evitar os custos
+                                    elevados ou o consumo de tempo associados à obtenção de dados catalogados.</dd>
+                                <dt>Aprendizagem por Reforços</dt>
+                                <dd>Tipo de aprendizagem inspirada no comportamento humano de aprendizagem por tentativa
+                                    e erro. Através de um sistema de recompensas e penalidades, o algoritmo vai
+                                    ajustando as suas decisões.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        <span>3.</span>
+                        <a href="https://www.nvidia.com/en-us/glossary/data-science/large-language-models/"
+                            title="https://www.nvidia.com/en-us/glossary/data-science/large-language-models/"
+                            target="_blank"><span>&nbsp;Large Language Models (LLM)</span></a>
+                    </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <img src="../Imagens/IA/LLM.jpg" class="d-block w-100" alt="...">
+                    <div class="accordion-body">
+                        <!-- Criou-se o elemento "div" para colocar todos os elementos "inline" dentro de um elemento "block"
+                                o objectivo é posicionar todos os elementos "inline" sobre uma imagem como pano de fundo...
+                        -->
+                        <div>
+                            <!-- Não está a funcionar a hiperligação pretendida : #flush-collapseFive
+                                    utilizou-se o "id" do "div" pai : #accordionFlushExample
+                            -->
+                            <p>São algoritmos de aprendizagem profunda (Deep Learning Algorithms que constituem um dos
+                                sub-ramos de "<a href="#accordionFlushExample"
+                                    title="2. O que é 'Machine Learning'"><span>Machine Learning</span></a>") que
+                                conseguem :</p>
+                            <ul>
+                                <li>reconhecer</li>
+                                <li>resumir</li>
+                                <li>traduzir</li>
+                                <li>prever</li>
+                                <li>recomendar</li>
+                                <li>e gerar conteúdo utilizando grandes conjuntos de dados.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                        <span>4.</span>
+                        <a href="https://aws.amazon.com/what-is/prompt-engineering/"
+                            title="https://aws.amazon.com/what-is/prompt-engineering/"
+                            target="_blank"><span>&nbsp;Prompt Engineering</span></a>
+                    </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <img src="../Imagens/IA/PromptEngineering.jpg" class="d-block w-100" alt="...">
+                    <div class="accordion-body">
+                        <!-- Criou-se o elemento "div" para colocar todos os elementos "inline" dentro de um elemento "block"
+                                o objectivo é posicionar todos os elementos "inline" sobre uma imagem como pano de fundo...
+                        -->
+                        <div>
+                            <!-- Não está a funcionar a hiperligação pretendida : #flush-collapseThree
+                                    utilizou-se o "id" do "div" pai : #accordionFlushExample
+                            -->
+                            <p>É o processo a partir do qual os sistemas de IA "<a href="#accordionFlushExample"
+                                    title="1.2 Tipos de IA : classificação baseada nas suas funcionalidades"><span>Generative
+                                        AI</span></a>" são guiados para criar os
+                                conteúdos desejados.</p>
+                            <dl>
+                                <dt>Prompt</dt>
+                                <!-- Criou-se o elemento "span" para evitar a utilização de uma classe só para estilizar um elemento
+                                        se estiliza-se por "dd", o segundo "dd" seria estilizado em bloco !
+                                -->
+                                <!-- Não está a funcionar a hiperligação pretendida : #flush-collapseThree
+                                        utilizou-se o "id" do "div" pai : #accordionFlushExample
+                                -->
+                                <dd><span>É a linguagem natural escrita (texto) que é utilizada para fazer pedidos aos
+                                        sistemas de IA "<a href="#accordionFlushExample"
+                                            title="1.2 Tipos de IA : classificação baseada nas suas funcionalidades"><span>Generative
+                                                AI</span></a>".</span></dd>
+                                <!-- Não está a funcionar a hiperligação pretendida : #flush-collapseThree
+                                        utilizou-se o "id" do "div" pai : #accordionFlushExample
+                                -->
+                                <dt><a href="#accordionFlushExample"
+                                        title="1.2 Tipos de IA : classificação baseada nas suas funcionalidades"><span>Generative
+                                            AI</span></a></dt>
+                                <dd>
+                                    <span>É um sistema de IA que cria conteúdos novos, tais como :</span>
+                                    <ul>
+                                        <li>histórias</li>
+                                        <li>conversas</li>
+                                        <li>vídeos</li>
+                                        <li>imagens</li>
+                                        <li>música</li>
+                                        <li>etc.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                        <span>5.</span>
+                        <a href="https://chat.openai.com/auth/login?fbclid=IwAR1Mv7UQSyHDqeKqAAD8t2vcKLtpsJ_NhEUV7Dfn_7NpRLQW72vAb29XClU"
+                            title="https://chat.openai.com/" target="_blank"><span>&nbsp;ChatGPT&nbsp;</span></a>
+                        <span>e</span>
+                        <a href="https://bard.google.com/" title="https://bard.google.com/"
+                            target="_blank"><span>&nbsp;Bard</span></a>
+                    </button>
+                </h2>
+                <div id="flush-collapseNine" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <img src="../Imagens/IA/ChatGPTBard.jpg" class="d-block w-100" alt="...">
+                    <div class="accordion-body">
+                        <!-- Criou-se o elemento "div" para colocar todos os elementos "inline" dentro de um elemento "block"
+                                o objectivo é posicionar todos os elementos "inline" sobre uma imagem como pano de fundo...
+                        -->
+                        <div>
+                            <p>Sâo ambos sistemas de IA
+                                <!-- Não está a funcionar a hiperligação pretendida : #flush-collapseThree
+                                        utilizou-se o "id" do "div" pai : #accordionFlushExample
+                                -->
+                                "<a href="#accordionFlushExample"
+                                    title="1.2 Tipos de IA : classificação baseada nas suas funcionalidades"><span>Generative
+                                        AI</span></a>" que utilizam
+                                <!-- Não está a funcionar a hiperligação pretendida : #flush-collapseSeven
+                                        utilizou-se o "id" do "div" pai : #accordionFlushExample
+                                -->
+                                <a href="#accordionFlushExample"
+                                    title="3. Large Language Models (LLM)"><span>LLM</span></a>.
+                            </p>
+                            <p><a href="https://chat.openai.com/auth/login?fbclid=IwAR1Mv7UQSyHDqeKqAAD8t2vcKLtpsJ_NhEUV7Dfn_7NpRLQW72vAb29XClU"
+                                    title="https://chat.openai.com/" target="_blank"><span>ChatGPT</span></a> foi
+                                desenvolvido em parceria pela <a href="https://openai.com/" title="https://openai.com/"
+                                    target="_blank"><span>OpenAI</span></a> e pela <a
+                                    href="https://www.microsoft.com/pt-pt/" title="https://www.microsoft.com/pt-pt/"
+                                    target="_blank"><span>Microsoft</span></a> e foi lançado em 2022. GPT significa
+                                "Generative Pre-Trained Transformer" :</p>
+                            <ul>
+                                <!-- Não está a funcionar a hiperligação pretendida : #flush-collapseThree
+                                        utilizou-se o "id" do "div" pai : #accordionFlushExample
+                                -->
+                                <li>"Generative" deriva dos sistemas de IA "<a href="#accordionFlushExample"
+                                        title="1.2 Tipos de IA : classificação baseada nas suas funcionalidades"><span>Generative
+                                            AI</span></a>"</li>
+                                <li>"Pre-Trained" advém do facto de ter
+                                    sido preparada com padrões da linguagem humana com o intuito de produzir conteúdo
+                                    escrito que faça sentido e que seja o mais verdadeiro possível</li>
+                                <li>"Transformer" é o algoritmo que permite processar mega dados e condensá-los num
+                                    texto simples, coerente como se de uma conversa se tratasse.</li>
+                            </ul>
+                            <p><a href="https://bard.google.com/" title="https://bard.google.com/"
+                                    target="_blank"><span>Bard</span></a> foi desenvolvido pela
+                                <a href="https://www.google.com/" title="https://www.google.com/"
+                                    target="_blank"><span>Google</span></a> e foi
+                                lançado em 2023. A escolha do nome foi provavelmente
+                                inspirada no homónimo "bard" que significa poeta ou contador de histórias.
+                            </p>
+                        </div>
+                        <!-- Bootstrap : Grid System - Responsive classes - All breakpoints
+                                built with flexbox
+                                fully responsive
+                        -->
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-3">
+                                    <a href="https://chat.openai.com/auth/login?fbclid=IwAR1Mv7UQSyHDqeKqAAD8t2vcKLtpsJ_NhEUV7Dfn_7NpRLQW72vAb29XClU"
+                                        title="https://chat.openai.com/" target="_blank"><span>ChatGPT</span></a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="https://bard.google.com/" title="https://bard.google.com/"
+                                        target="_blank"><span>Bard</span></a>
+                                </div>
+                            </div>
+                            <!-- Quebra de linha : br -->
+                            <br>
+                            <div class="row">
+                                <div class="col-2">Criado por</div>
+                                <div class="col-3">
+                                    <a href="https://openai.com/" title="https://openai.com/"
+                                        target="_blank"><span>OpenAI</span></a><span> e</span>
+                                    <a href="https://www.microsoft.com/pt-pt/" title="https://www.microsoft.com/pt-pt/"
+                                        target="_blank"><span>Microsoft</span></a>
+                                </div>
+                                <div class="col-3">
+                                    <a href="https://www.google.com/" title="https://www.google.com/"
+                                        target="_blank"><span>Google</span></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <!-- Não está a funcionar a hiperligação pretendida : #flush-collapseSeven
+                                            utilizou-se o "id" do "div" pai : #accordionFlushExample
+                                    -->
+                                    <a href="#accordionFlushExample"
+                                        title="3. Large Language Models (LLM)"><span>LLM</span></a>
+                                </div>
+                                <div class="col-3">GPT-3.5 (gratuito)</div>
+                                <div class="col-3">
+                                    <a href="https://ai.google/discover/palm2/"
+                                        title="https://ai.google/discover/palm2/" target="_blank"><span>PaLM 2*</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-3">GPT-4 (pago)</div>
+                                <div class="col-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">Fonte(s) dos dados</div>
+                                <div class="col-3">Internet</div>
+                                <div class="col-3">Internet</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">Ligado à Internet</div>
+                                <div class="col-3">GPT-4 (pago) através de "plugins"</div>
+                                <div class="col-3">Sim</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <!-- Não está a funcionar a hiperligação pretendida : #flush-collapseFour
+                                            utilizou-se o "id" do "div" pai : #accordionFlushExample
+                                    -->
+                                    <a href="#accordionFlushExample"
+                                        title="1.3 Tipos de IA : classificação baseada nas suas modalidades"><span>Multimodal</span></a>
+                                </div>
+                                <div class="col-3">Sim</div>
+                                <div class="col-3">Sim</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">Integração de outras ferramentas</div>
+                                <div class="col-3">GPT-4 (pago) através de "plugins"</div>
+                                <div class="col-3">Maioritariamente as ferramentas da própria Google (Maps, Youtube...)
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">Preço</div>
+                                <div class="col-3">Gratuito ou pago</div>
+                                <div class="col-3">Gratuito</div>
+                            </div>
+                        </div>
+                        <dl>
+                            <dt><a href="https://ai.google/discover/palm2/" title="https://ai.google/discover/palm2/"
+                                    target="_blank"><span>*PaLM 2</span></a></dt>
+                            <dd>Pathways Language Model</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Quebra de tema : hr -->
+    <hr>
+    <!-- Elemento semântico : section -->
+    <section>
+        <h4>Curiosidades</h4>
+        <!-- Quebra de linha : br -->
+        <br>
+        <!-- Bootstrap : Grid System - Responsive classes - Row columns
+                built with flexbox
+                fully responsive
+                    "Grid System" foi definido para os "cards"
+                    a cada "card" foi adicionado a classe "col"
+                    como os "cards" por defeito têm uma largura definida pelo Bootstrap (style="width: 18rem;"),
+                        a classe "row-cols-" não funcionava como deveria, por isso
+                            foram removidos dos "cards" o atributo da largura (style="width: 18rem;")...
+                    a classe ".row-cols-" permite-nos definir o número de colunas que queremos por linha...
+            -->
+        <div class="container text-center">
+            <div class="row row-cols-2">
+                <!-- Bootstrap : Card - Image
+                        built with flexbox
+                        they have no margin by default
+                            a imagem foi substituída por um vídeo do youtube : <iframe>
+                -->
+                <div class="card col">
+                    <iframe height="315" src="https://www.youtube.com/embed/gpP_YEv_9jA?si=Jqs4C_Kc9-qxugDF"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Algumas das ferramentas digitais baseadas em IA já disponíveis</p>
+                        <p class="card-text">Mars 24, 2023</p>
+                    </div>
+                </div>
+                <!-- Bootstrap : Card - Image
+                                        built with flexbox
+                                        they have no margin by default
+                                            a imagem foi substituída por um vídeo do youtube : <iframe>
+                                -->
+                <div class="card col">
+                    <iframe height="315" src="https://www.youtube.com/embed/C_78DM8fG6E?si=T2uK7ZsbWcjDdydz"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Algumas das potencialidades do
+                            <a href="https://chat.openai.com/auth/login?fbclid=IwAR1Mv7UQSyHDqeKqAAD8t2vcKLtpsJ_NhEUV7Dfn_7NpRLQW72vAb29XClU"
+                                title="https://chat.openai.com/" target="_blank"><span>ChatGPT</span></a>
+                        </p>
+                        <p class="card-text">April 20, 2023</p>
+                    </div>
+                </div>
+                <!-- Bootstrap : Card - Image
+                        built with flexbox
+                        they have no margin by default
+                            a imagem foi substituída por um vídeo do youtube : <iframe>
+                -->
+                <div class="card col">
+                    <iframe height="315" src="https://www.youtube.com/embed/_ZvnD73m40o?si=DuZjutUEYJG7QNRU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">Aprender "Prompt Engineering" para tirar partido de todas as
+                            funcionalidades dos sistemas de IA "Generative AI"</p>
+                        <p class="card-text">September 5, 2023</p>
+                    </div>
+                </div>
+                <!-- Bootstrap : Card - Image
+                                        built with flexbox
+                                        they have no margin by default
+                                            a imagem foi substituída por um vídeo do youtube : <iframe>
+                                -->
+                <div class="card col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/U9mJuUkhUzk?si=Owq7xfz0bY72jFSu"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <a href="https://openai.com/" title="https://openai.com/"
+                                target="_blank"><span>OpenAI</span></a>
+                            : primeira conferência para programadores.
+                        </p>
+                        <p class="card-text">November 06, 2023</p>
+                    </div>
+                </div>
+                <!-- Bootstrap : Card - Image
+                        built with flexbox
+                        they have no margin by default
+                            a imagem foi substituída por um vídeo do youtube : <iframe>
+                -->
+                <div class="card col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UIZAiXYceBI?si=R-qGYKYBSfQcIKbj"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <a href="https://deepmind.google/?_gl=1*fkfnq7*_up*MQ..*_ga*NjI1MTU3MTkwLjE3MDIyMDcxNDY.*_ga_LS8HVHCNQ0*MTcwMjIwNzE0Ni4xLjAuMTcwMjIwNzE0Ni4wLjAuMA.."
+                                title="https://deepmind.google/?_gl=1*fkfnq7*_up*MQ..*_ga*NjI1MTU3MTkwLjE3MDIyMDcxNDY.*_ga_LS8HVHCNQ0*MTcwMjIwNzE0Ni4xLjAuMTcwMjIwNzE0Ni4wLjAuMA.."
+                                target="_blank"><span>Gemini</span></a>
+                            <span> : </span>
+                            <a href="https://www.google.com/" title="https://www.google.com/"
+                                target="_blank"><span>Google</span></a>
+                            <span>lançou a sua versão mais recente "LLM"</span>
+                        </p>
+                        <p class="card-text">
+                            <a href="https://qz.com/everything-you-need-to-know-about-gemini-google-s-new-1851074463#:~:text=The%20tech%20giant%2C%20which%20calls,audio%2C%20images%2C%20and%20video."
+                                title="https://qz.com/everything-you-need-to-know-about-gemini-google-s-new-1851074463#:~:text=The%20tech%20giant%2C%20which%20calls,audio%2C%20images%2C%20and%20video."
+                                target="_blank"><span>qz.com</span></a>
+                        </p>
+                        <p class="card-text">
+                            <a href="https://www.theverge.com/2023/12/6/23990466/google-gemini-llm-ai-model"
+                                title="https://www.theverge.com/2023/12/6/23990466/google-gemini-llm-ai-model"
+                                target="_blank"><span>www.theverge.com</span></a>
+                        </p>
+                        <p class="card-text">December 6, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Quebra de tema : hr -->
+    <hr>
+    <!-- Elemento semântico : footer -->
+    <footer>
+        <!-- Bootstrap : Grid System - Responsive classes - Row columns
+                built with flexbox
+                fully responsive
+                    a classe ".row-cols-" permite-nos definir o número de colunas que queremos por linha...
+        -->
+        <div class="container text-center">
+            <!-- Utilizar : row-cols-2 em vez de row-cols-3. Porquê ?
+                para evitar que o endereço de email se sobreponha às colunas adjacentes e vice-versa
+            -->
+            <div class="row row-cols-2">
+                <div class="col">
+                    <!-- https://icons.getbootstrap.com/icons/linkedin/ -->
+                    <h5>Designer <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
+                        </svg></h5>
+                    <a href="https://www.linkedin.com/in/joaovianafigueiredo/"
+                        title="https://www.linkedin.com/in/joaovianafigueiredo/" target="_blank">
+                        <p>João Figueiredo</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <!-- https://fonts.google.com/ : Icons -->
+                    <h5>Designer <span class="material-symbols-outlined">contact_mail</span></h5>
+                    <address>joaovianafigueiredo@gmail.com</address>
+                </div>
+                <div class="col">
+                    <!-- https://fonts.google.com/ : Icons -->
+                    <h5><a href="./form.html" title="form.html" target="_blank">Contact Us</a>
+                        <span class="material-symbols-outlined">contact_support</span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

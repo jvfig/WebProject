@@ -1,0 +1,153 @@
+header {
+    animation-name: header_initialPos;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    & img {
+        height: 20vh;
+
+        /* filter: blur(10px) brightness(0) contrast(0) drop-shadow(0px 0px 0px 0px) grayscale(100%) hue-rotate(0) invert(0) opacity(0) saturate(1) sepia(0); */
+        filter: blur(5px);
+
+        &:hover {
+            filter: blur(0px);
+        }
+    }
+
+    & p {
+        color: lightcyan;
+        font-weight: bold;
+        font-size: large;
+        visibility: hidden;
+
+        &:hover {
+            color: sienna;
+        }
+    }
+}
+
+@keyframes header_initialPos {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    25% {
+        visibility: visible;
+        opacity: 0.25;
+    }
+
+    50% {
+        visibility: visible;
+        opacity: 0.5;
+    }
+
+    75% {
+        visibility: visible;
+        opacity: 0.75;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+nav {
+    animation-name: nav_initialPos;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    & div {
+        margin-left: auto;
+        margin-right: auto;
+
+        & a {
+            &:hover {
+                background-color: gainsboro;
+            }
+        }
+    }
+}
+
+@keyframes nav_initialPos {
+    0% {
+        position: relative;
+        left: 90%;
+        box-shadow: 0px 0px 0px 0px white;
+    }
+
+    100% {
+        position: relative;
+        left: 0%;
+        box-shadow: 2px 2px 2px 2px black;
+    }
+}
+
+/* Para a classe que define a página actual */
+a[aria-current="page"] {
+    font-weight: bold;
+}
+
+/* Para as classes importadas da Google */
+span[class="material-symbols-outlined"] {
+    vertical-align: middle;
+
+    &:hover {
+        scale: 1.5;
+        color: black;
+    }
+}
+
+/* Para as classes importadas do Bootstrap */
+svg[class="bi bi-linkedin"] {
+    &:hover {
+        scale: 1.5;
+        color: black;
+    }
+}
+
+footer {
+    animation-name: footer_initialPos;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    & a {
+        text-decoration: none;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    & h5 {
+        &:hover {
+            color: sienna;
+        }
+    }
+
+    & address {
+        &:hover {
+            color: sienna;
+        }
+    }
+}
+
+@keyframes footer_initialPos {
+    from {
+        position: relative;
+        bottom: -5vh;
+        box-shadow: 0px 0px 0px 0px white;
+        background-image: linear-gradient(to right, white, lightgray, white);
+    }
+
+    to {
+        position: relative;
+        bottom: 0vh;
+        box-shadow: 0px -2px 2px 2px black;
+        background-image: linear-gradient(to right, lightgray, white, lightgray);
+    }
+}

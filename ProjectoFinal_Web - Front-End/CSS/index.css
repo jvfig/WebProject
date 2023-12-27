@@ -1,0 +1,168 @@
+main {
+    animation-name: main_initialPos;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    & h4 {
+        color: sienna;
+        text-shadow: 8px 8px 4px lightgray;
+
+        &:hover {
+            font-weight: bold;
+            text-shadow: 10px 10px 4px darkgray;
+        }
+    }
+
+    & li {
+        &:hover {
+            color: sienna;
+        }
+    }
+
+    & p {
+        &:hover {
+            color: sienna;
+        }
+    }
+
+    & a {
+        text-decoration: none;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+@keyframes main_initialPos {
+    from {
+        position: relative;
+        left: -50%;
+    }
+
+    to {
+        position: relative;
+        left: 0%;
+    }
+}
+
+section {
+    background-color: black;
+    opacity: 0.8;
+
+    & li {
+        text-shadow: 10px 10px 5px lightgray;
+
+        &:hover {
+            color: sienna;
+            text-shadow: 0px 0px 0px white;
+
+            animation-name: li_hover;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+
+        & button {
+            &:hover {
+                /* scale: 1.1;
+                box-shadow: 2px 2px 4px 4px lightgray; */
+
+                animation-name: button_hover;
+                animation-duration: 60s;
+                animation-timing-function: linear;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+
+    & p {
+        text-shadow: 8px 8px 4px gray;
+
+        &:hover {
+            color: sienna;
+            text-shadow: 0px 0px 0px white;
+        }
+    }
+
+    &+section {
+        display: none;
+
+        & h1 {
+            color: sienna;
+
+            &:hover {
+                text-shadow: 8px 8px 6px gray;
+                scale: 2;
+            }
+        }
+
+        & div[class="card col"] {
+            box-shadow: -2px -2px 4px 4px lightgray;
+            background-image: linear-gradient(to right, darkgray, lightgray, darkgray);
+
+            &:hover {
+                box-shadow: 2px 2px 4px 4px lightgray;
+                background-image: linear-gradient(to right, lightgray, white, lightgray);
+            }
+        }
+    }
+}
+
+div[id="collapseWidthExample"] {
+    box-shadow: 2px 2px 4px 4px lightgray;
+
+    &:hover {
+        box-shadow: -2px -2px 4px 4px lightgray;
+    }
+}
+
+@keyframes li_hover {
+    0% {
+        position: relative;
+        left: 0%;
+    }
+
+    25% {
+        position: relative;
+        left: -5%;
+    }
+
+    50% {
+        position: relative;
+        left: 0%;
+    }
+
+    75% {
+        position: relative;
+        left: 5%;
+    }
+
+    100% {
+        position: relative;
+        left: 0%;
+    }
+}
+
+@keyframes button_hover {
+    0% {
+        visibility: hidden;
+    }
+
+    25% {
+        visibility: visible;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    75% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}

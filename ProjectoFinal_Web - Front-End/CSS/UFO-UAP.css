@@ -1,0 +1,236 @@
+/* Using variables in CSS
+    :root {
+        --variableName: value;
+        propertyName: var(--variableName);
+    }
+*/
+
+/* Pseudo-class "scope"
+    it represents elements that are a reference point, or scope, for selectors to match against
+    which element(s) ":scope{}" matches depends on the context in which it is used
+        when used at the root level of a stylesheet, it's equivalent to ":root{}", which in a regular HTML document matches the <html> element
+        when used inside a "@scope" block, it matches the block's defined scope root
+            it provides a way to apply styles to the root of the scope from inside the "@scope" block itself
+        when used within a "DOM API" call (such as querySelector(), querySelectorAll(), matches(), or Element.closest())
+            it matches the element on which the method was called
+                :scope {
+                    propertyName: value;
+                }
+
+                @scope (.light-scheme) {
+                    :scope {
+                        propertyName: value;
+                    }
+
+                    a {
+                        propertyName: value;
+                    }
+                }
+
+                @scope (.dark-scheme) {
+                    :scope {
+                        propertyName: value;
+                    }
+
+                    a {
+                        propertyName: value;
+                    }
+                }
+*/
+
+main {
+    background-image: linear-gradient(to right, darkgray, black, darkgray, black);
+    box-shadow: 2px 2px 2px 2px lightgray;
+
+    &:hover {
+        background-image: linear-gradient(to right, lightgray, gray, lightgray, gray);
+        box-shadow: 2px 2px 2px 2px black;
+
+        &>h4 {
+            color: black;
+        }
+    }
+
+    &>h4 {
+        text-align: center;
+        visibility: hidden;
+
+        &:hover {
+            color: saddlebrown;
+            font-weight: bold;
+        }
+    }
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+div[class="circle"] {
+    border-radius: 50%;
+
+    background-color: lightgray;
+
+    aspect-ratio: 1/1;
+    width: 35px;
+}
+
+details {
+    color: white;
+
+    &>summary {
+        &:hover {
+            color: sienna;
+            font-weight: bold;
+        }
+    }
+}
+
+section {
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px black;
+
+    &>h4 {
+        color: saddlebrown;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    & a {
+        text-decoration: none;
+        color: #8C8C8C;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    & div[class="card col"] {
+        margin-left: auto;
+        margin-right: auto;
+
+        & img {
+            margin-left: auto;
+            margin-right: auto;
+            aspect-ratio: 1/1;
+            width: 15vw;
+
+            &:hover {
+                width: 30vw;
+                box-shadow: 2px 2px 4px 4px lightgray;
+            }
+        }
+
+        & h5[class="card-title"] {
+            color: gray;
+
+            &:hover {
+                font-weight: bold;
+                color: white;
+            }
+        }
+
+        & p[class="card-text"] {
+            color: gray;
+
+            &:hover {
+                font-weight: bold;
+                color: white;
+            }
+        }
+
+        & li {
+            &>span {
+                font-weight: bold;
+
+                &:hover {
+                    color: darkgray;
+                }
+            }
+        }
+
+        &:hover {
+            z-index: 1;
+
+            animation-name: cards_hover;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes cards_hover {
+    0% {
+        rotate: 0deg;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        background-color: black;
+        border-color: lightgray;
+    }
+
+    25% {
+        rotate: 2deg;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        background-color: black;
+        border-color: lightgray;
+    }
+
+    50% {
+        rotate: 0deg;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        background-color: black;
+        border-color: lightgray;
+    }
+
+    75% {
+        rotate: -2deg;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        background-color: black;
+        border-color: lightgray;
+    }
+
+    100% {
+        rotate: 0deg;
+        box-shadow: 2px 2px 2px 2px lightgray;
+        background-color: black;
+        border-color: lightgray;
+    }
+}
+
+#id_section4 {
+    & h4 {
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    & div[class="col"] {
+        margin-left: auto;
+        margin-right: auto;
+
+        & h6 {
+            color: aqua;
+
+            &:hover {
+                color: saddlebrown;
+                font-weight: bold;
+            }
+        }
+
+        & p {
+            color: darkgray;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+button[class="col btn btn-dark"] {
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
